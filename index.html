@@ -1,0 +1,44 @@
+---
+layout: page
+title: MARS - Maths Assessments Recommendation System
+---
+
+<p>Test</p>
+
+<a href="/mars/catalogue/Basics/Algebra">/mars/catalogue/Basics/Algebra</a>
+<a href="/mars/catalogue/Differential Equations">/mars/catalogue/Differential Equations</a>
+
+<a href="/mars/about">About</a>
+
+<br>
+<iframe src="/mars/catalogue/Basics/Algebra/Factoring/Quiz" title="Quiz" style="width: 100%; height: 500px;"></iframe>
+
+<ul id="directory">
+
+</ul>
+
+<script>
+    async function list_directory(user, repo, directory) {
+        const url = `https://api.github.com/repos/${user}/${repo}/git/trees/master`;
+        directory = directory.split('/').filter(Boolean);
+        const dir = await directory.reduce(async (acc, dir) => {
+            const { url } = await acc;
+            const list = await fetch(url).then(res => res.json());
+            return list.tree.find(node => node.path === dir);
+        }, { url });
+        if (dir) {
+            const list = await fetch(dir.url).then(res => res.json());
+            return list.tree.map(node => node.path);
+        }
+    }
+
+    const files = await list_directory("rickybassom", "mars", "/catalogue/");
+    console.log(files);
+
+    const directory = document.getElementById('directory');
+    files.forEach(file => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="/mars/catalogue/${file}">${file}</a>`;
+        directory.appendChild(li);
+    });
+</script>
