@@ -32,13 +32,14 @@ title: MARS - Maths Assessments Recommendation System
         }
     }
 
-    const files = await list_directory("rickybassom", "mars", "/catalogue/");
-    console.log(files);
+    const files = list_directory("rickybassom", "mars", "/catalogue/");
 
-    const directory = document.getElementById('directory');
-    files.forEach(file => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="/mars/catalogue/${file}">${file}</a>`;
-        directory.appendChild(li);
+    files.then(files => {
+        console.log(files);
+        files.forEach(file => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="/mars/catalogue/${file}">${file}</a>`;
+            document.getElementById('directory').appendChild(li);
+        });
     });
 </script>
