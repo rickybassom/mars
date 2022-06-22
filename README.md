@@ -32,11 +32,23 @@ https://rickybassom.github.io/mars/
 * The file format is described at the top of the file as comments.
 * Dependency data is not required, but more dependency data will improve recommendations on the site.
 
-## Dependencies
+## Modifying the catalogue through github.com
+1. Go to https://github.com/rickybassom/mars.
+2. Press the dot key on your keyboard. An editor should pop up.
+3. On the left hand side of the editor click on the Explore button to view the repository's files.
+4. Using the file tree you can add, modify, and delete file/folders inside the `catalogue/` folder. Files/folders can be uploaded by right clicking on a folder and clicking on upload.
+5. Once your happy with your changes, you can commit+push the changes to the repository by clicking on the Source Control button on the left and then clicking on the Commit and push tick button along with a name for your commit.
+6. If you navigate back to https://github.com/rickybassom/mars you should see the commit added to repository.
+7. After ~5 minutes the changes should appear on the site at https://rickybassom.github.io/mars/.
+8. If the changes do not appear on the site double check your last commit at https://github.com/rickybassom/mars/commits/master. Or try rerunning the latest GitHub Action page building job here https://github.com/rickybassom/mars/actions.
+
+## Advanced Developer Documentation
+
+### Dependencies
 - `ruby 2.X.X`
 - `jekyll` For templating look at: https://jekyllrb.com/docs/liquid/
 
-## Running locally
+### Running locally
 ```sh
 bundle exec jekyll serve
 ``` 
