@@ -25,6 +25,7 @@ https://rickybassom.github.io/mars/
   * One or more child directories
 
 #### Topic Dependency Graph
+* THIS MAY CHANGE IN THE NEAR FUTURE, DON'T POPULATE FILE
 * Located at `catalogue/deps.csv`.
 * Represents a weighted directed graph of files and directories to identify topic learning dependencies.
 * A topic is a file or directory in the `catalogue/` directory. Note that a topic that is a SCORM package is identified by the directory, not any files in an unzipped SCORM directory.
