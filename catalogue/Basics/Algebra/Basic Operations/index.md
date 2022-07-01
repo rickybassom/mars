@@ -1,6 +1,6 @@
 ---
 last_updated: 2020-05-29
-difficulty: hard
+difficulty: easy
 
 depends_on: 
   - path: catalogue/Basics/Basics.md
@@ -9,5 +9,8 @@ depends_on:
     weight: 5
 ---
 
-# Alg
+# Basics Ops
 
+hello123
+
+Depends on: {{ page.depends_on }}

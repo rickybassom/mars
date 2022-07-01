@@ -1,0 +1,37 @@
+# Generate catalogue listing file using ./generate_catalogue_index.sh, commit and push
+name: Generate catalogue index
+
+on: [push]
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    # Set job outputs to values from filter step
+    outputs:
+      backend: ${{ steps.filter.outputs.catalogue }}
+    steps:
+      # For pull requests it's not necessary to checkout the code
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            catalogue:
+              - 'catalogue/**'
+
+  generate:
+    needs: changes
+    if: ${{ needs.changes.outputs.catalogue == 'true' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate catalogue index
+        run: ./generate_catalogue_index.sh
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'Update catalogue_index.txt'
+          add: 'assets/catalogue_index.txt'

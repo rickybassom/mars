@@ -1,45 +1,112 @@
 ---
-layout: page
-title: MARS - Maths Assessments Recommendation System
+layout: main_page
 ---
 
-<p>Test</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">File Tree</h3>
+                </div>
+                <div class="card-body" style="padding: 2px">
+                    <div id="tree-view"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">View</h3>
+                </div>
+                <div class="card-body" style="padding: 0">
+                    <iframe src="" title="" style="width: 100%; height: 500px; border: none"></iframe>
+                </div>
+            </div>
 
-<a href="/mars/catalogue/Basics/Algebra">/mars/catalogue/Basics/Algebra</a>
-<a href="/mars/catalogue/Differential Equations">/mars/catalogue/Differential Equations</a>
+            <div class="card" style="display: none;">
+                <div class="card-header">
+                    <h3 class="card-title">Files</h3>
+                </div>
+                <div class="card-body" style="padding: 0">
 
-<a href="/mars/about">About</a>
+                </div>
+            </div>
 
-<br>
-<iframe src="/mars/catalogue/Basics/Algebra/Factoring/Quiz" title="Quiz" style="width: 100%; height: 500px;"></iframe>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Suggested Prerequisites</h3>
+                </div>
+                <div class="card-body" style="padding: 0">
 
-<ul id="directory">
-
-</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-    async function list_directory(user, repo, directory) {
-        const url = `https://api.github.com/repos/${user}/${repo}/git/trees/master`;
-        directory = directory.split('/').filter(Boolean);
-        const dir = await directory.reduce(async (acc, dir) => {
-            const { url } = await acc;
-            const list = await fetch(url).then(res => res.json());
-            return list.tree.find(node => node.path === dir);
-        }, { url });
-        if (dir) {
-            const list = await fetch(dir.url).then(res => res.json());
-            return list.tree.map(node => node.path);
+    async function main() {
+        // Load assets/catalogue_index.txt where each line is string in list
+        const response = await fetch('{{ site.baseurl }}/assets/catalogue_index.txt');
+        const data = await response.text();
+        let filesFlat = data.split('\n');
+        filesFlat = filesFlat.filter(line => line.length > 0);
+        console.log(filesFlat);
+
+        // Convert flat list into a nested list
+        const hierarchy = filesFlat.reduce(function (hier, path) {
+            let x = hier;
+            path.split('/').forEach(function (item) {
+                if (!x[item]) {
+                    x[item] = {};
+                }
+                x = x[item];
+            });
+            x.path = path;
+            return hier;
+        }, {});
+        console.log(hierarchy); // nested list {dir: {dir: dir, dir2: {...}}}
+
+        // Recursive function to populate #tree-view using nested <ul>s and <li>s
+        function populateTree(ul, hierarchy) {
+            for (let key in hierarchy) {
+                if (key === 'path' || key.startsWith("index.")) {
+                    continue;
+                }
+                let li = document.createElement('li');
+                let a = document.createElement('a');
+                a.href = '/#/' + hierarchy[key].path;
+                a.innerText = key;
+
+                // On click, change iframe preview
+                a.addEventListener('click', function () {
+                    let iframe = document.querySelector('iframe');
+                    iframe.src = hierarchy[key].path.replace(".md", ".html");
+                });
+
+                li.appendChild(a);
+                ul.appendChild(li);
+                if (hierarchy[key] !== undefined && typeof hierarchy[key] === 'object') {
+                    // If a child is a numbas-manifest.json ignore all children
+                    if (hierarchy[key]["numbas-manifest.json"] !== undefined) {
+                        continue;
+                    }
+
+                    let ul2 = document.createElement('ul');
+                    li.appendChild(ul2);
+                    populateTree(ul2, hierarchy[key]);
+                }
+            }
         }
+
+        // Populate #tree-view
+        let treeView = document.getElementById('tree-view');
+        let ul = document.createElement('ul');
+        treeView.appendChild(ul);
+        populateTree(ul, hierarchy['catalogue']);
     }
 
-    const files = list_directory("rickybassom", "mars", "/catalogue/");
-
-    files.then(files => {
-        console.log(files);
-        files.forEach(file => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="/mars/catalogue/${file}">${file}</a>`;
-            document.getElementById('directory').appendChild(li);
-        });
-    });
+    main();
 </script>
+

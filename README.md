@@ -44,16 +44,20 @@ https://rickybassom.github.io/mars/
 
 ## Advanced Developer Documentation
 
-### Dependencies
-- `ruby 2.X.X`
-- `jekyll` For templating look at: https://jekyllrb.com/docs/liquid/
-
 ### Running locally
+Generate `assets/catalogue_index.txt`:
 ```sh
-bundle exec jekyll serve
-``` 
-For reference: https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll
+./generate_catalogue_index.sh
+```
 
+Start server:
+```sh
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+```
+
+Useful links:
+- https://jekyllrb.com/
+- https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
 ## Contribution
 

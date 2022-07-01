@@ -1,0 +1,1 @@
+find catalogue/ -mindepth 1 > ./assets/catalogue_index.txt
