@@ -1,23 +1,26 @@
+catalogue/Linear Algebra 2
+catalogue/Linear Algebra 2/index.md
 catalogue/Basics
+catalogue/Basics/index.md
 catalogue/Basics/Algebra
+catalogue/Basics/Algebra/test.pdf
+catalogue/Basics/Algebra/index.md
 catalogue/Basics/Algebra/Basic Operations
+catalogue/Basics/Algebra/Basic Operations/test.pdf
 catalogue/Basics/Algebra/Basic Operations/index.md
 catalogue/Basics/Algebra/Basic Operations/Test.md
 catalogue/Basics/Algebra/Factoring
-catalogue/Basics/Algebra/Factoring/Quiz
-catalogue/Basics/Algebra/Factoring/Quiz/downloaded-from.txt
-catalogue/Basics/Algebra/Factoring/Quiz/index.html
-catalogue/Basics/Algebra/Factoring/Quiz/numbas-manifest.json
-catalogue/Basics/Algebra/Factoring/Quiz/readme.txt
-catalogue/Basics/Algebra/Factoring/Quiz/scripts.js
-catalogue/Basics/Algebra/Factoring/Quiz/source.exam
-catalogue/Basics/Algebra/Factoring/Quiz/styles.css
-catalogue/Basics/Algebra/Factoring/Test Video.mp4
 catalogue/Basics/Algebra/Factoring/test.pdf
 catalogue/Basics/Algebra/Factoring/index.md
-catalogue/Basics/Algebra/Inequalities
-catalogue/Basics/Algebra/Inequalities/test.pdf
-catalogue/Basics/Algebra/Inequalities/index.md
+catalogue/Basics/Algebra/Factoring/Quiz
+catalogue/Basics/Algebra/Factoring/Quiz/readme.txt
+catalogue/Basics/Algebra/Factoring/Quiz/index.html
+catalogue/Basics/Algebra/Factoring/Quiz/source.exam
+catalogue/Basics/Algebra/Factoring/Quiz/numbas-manifest.json
+catalogue/Basics/Algebra/Factoring/Quiz/downloaded-from.txt
+catalogue/Basics/Algebra/Factoring/Quiz/styles.css
+catalogue/Basics/Algebra/Factoring/Quiz/scripts.js
+catalogue/Basics/Algebra/Factoring/Test Video.mp4
 catalogue/Basics/Algebra/Linear Equations
 catalogue/Basics/Algebra/Linear Equations/test.pdf
 catalogue/Basics/Algebra/Linear Equations/index.md
@@ -27,17 +30,15 @@ catalogue/Basics/Algebra/Polynomials/index.md
 catalogue/Basics/Algebra/Quadratic Equations
 catalogue/Basics/Algebra/Quadratic Equations/test.pdf
 catalogue/Basics/Algebra/Quadratic Equations/index.md
-catalogue/Basics/Algebra/test.pdf
-catalogue/Basics/Algebra/index.md
-catalogue/Basics/index.md
+catalogue/Basics/Algebra/Inequalities
+catalogue/Basics/Algebra/Inequalities/test.pdf
+catalogue/Basics/Algebra/Inequalities/index.md
 catalogue/Differentiation
 catalogue/Differentiation/Basics
-catalogue/Differentiation/Basics/downloaded-from.txt
-catalogue/Differentiation/Basics/index.html
-catalogue/Differentiation/Basics/numbas-manifest.json
 catalogue/Differentiation/Basics/readme.txt
-catalogue/Differentiation/Basics/scripts.js
+catalogue/Differentiation/Basics/index.html
 catalogue/Differentiation/Basics/source.exam
+catalogue/Differentiation/Basics/numbas-manifest.json
+catalogue/Differentiation/Basics/downloaded-from.txt
 catalogue/Differentiation/Basics/styles.css
-catalogue/Linear Algebra 2
-catalogue/Linear Algebra 2/index.md
+catalogue/Differentiation/Basics/scripts.js
