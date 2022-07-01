@@ -68,6 +68,7 @@ layout: main_page
         }, {});
         console.log(hierarchy); // nested list {dir: {dir: dir, dir2: {...}}}
 
+        let iframe = document.querySelector('iframe');
         // Recursive function to populate #tree-view using nested <ul>s and <li>s
         function populateTree(ul, hierarchy) {
             for (let key in hierarchy) {
@@ -81,7 +82,6 @@ layout: main_page
 
                 // On click, change iframe preview
                 a.addEventListener('click', function () {
-                    let iframe = document.querySelector('iframe');
                     iframe.src = "{{ site.baseurl }}/" + hierarchy[key].path.replace(".md", ".html");
                 });
 
@@ -91,6 +91,18 @@ layout: main_page
                     // If a child is a numbas-manifest.json ignore all children
                     if (hierarchy[key]["numbas-manifest.json"] !== undefined) {
                         continue;
+                    }
+
+                    // If no index in the directory, don't update the iframe when directory clicked
+                    if(Object.keys(hierarchy[key]).length !== 1 && hierarchy[key]["index.html"] === undefined && hierarchy[key]["index.md"] === undefined) {
+                        // Remove event listeners from Element and add new click listener
+                        console.log(hierarchy[key]);
+                        let aNew = a.cloneNode(true)
+                        aNew.addEventListener('click', function () {
+                            iframe.src = "";
+                        });
+
+                        a.replaceWith(aNew);
                     }
 
                     let ul2 = document.createElement('ul');
