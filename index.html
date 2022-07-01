@@ -82,7 +82,7 @@ layout: main_page
                 // On click, change iframe preview
                 a.addEventListener('click', function () {
                     let iframe = document.querySelector('iframe');
-                    iframe.src = "{{ site.baseurl }}" + hierarchy[key].path.replace(".md", ".html");
+                    iframe.src = "{{ site.baseurl }}/" + hierarchy[key].path.replace(".md", ".html");
                 });
 
                 li.appendChild(a);
