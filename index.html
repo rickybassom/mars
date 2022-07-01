@@ -76,13 +76,13 @@ layout: main_page
                 }
                 let li = document.createElement('li');
                 let a = document.createElement('a');
-                a.href = '/#/' + hierarchy[key].path;
+                a.href = "{{ site.baseurl }}" + '/#/' + hierarchy[key].path;
                 a.innerText = key;
 
                 // On click, change iframe preview
                 a.addEventListener('click', function () {
                     let iframe = document.querySelector('iframe');
-                    iframe.src = hierarchy[key].path.replace(".md", ".html");
+                    iframe.src = "{{ site.baseurl }}" + hierarchy[key].path.replace(".md", ".html");
                 });
 
                 li.appendChild(a);
