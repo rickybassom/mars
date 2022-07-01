@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     # Set job outputs to values from filter step
     outputs:
-      backend: ${{ steps.filter.outputs.catalogue }}
+      catalogue: ${{ steps.filter.outputs.catalogue }}
     steps:
       - uses: actions/checkout@v2
       # For pull requests it's not necessary to checkout the code
