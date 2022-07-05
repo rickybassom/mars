@@ -1,5 +1,5 @@
-catalogue/Linear Algebra 2
-catalogue/Linear Algebra 2/index.md
+catalogue/Linear Algebra
+catalogue/Linear Algebra/index.md
 catalogue/Basics
 catalogue/Basics/index.md
 catalogue/Basics/Algebra
