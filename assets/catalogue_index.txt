@@ -4,6 +4,37 @@ catalogue/Vectors
 catalogue/Vectors/index.md
 catalogue/Complex Numbers
 catalogue/Complex Numbers/index.md
+catalogue/Complex Numbers/Q: complex number in Cartesian form
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0objective.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/readme.txt
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0random.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lom.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/index.html
+catalogue/Complex Numbers/Q: complex number in Cartesian form/adlseq_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/adlcp_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/adlnav_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0util.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/XMLSchema.dtd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imscp_v1p1.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/source.exam
+catalogue/Complex Numbers/Q: complex number in Cartesian form/numbas-manifest.json
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0auxresource.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lomCustom.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/ims_xml.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/downloaded-from.txt
+catalogue/Complex Numbers/Q: complex number in Cartesian form/datatypes.dtd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/xml.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0limit.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/styles.css
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lomLoose.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/scripts.js
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0control.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsmanifest.xml
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0rollup.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0seqrule.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0delivery.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lomStrict.xsd
 catalogue/Linear Algebra
 catalogue/Linear Algebra/index.md
 catalogue/Polar Coordinates
