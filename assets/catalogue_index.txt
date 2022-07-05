@@ -1,5 +1,9 @@
+catalogue/Sequences
+catalogue/Sequences/index.md
 catalogue/Linear Algebra
 catalogue/Linear Algebra/index.md
+catalogue/Series
+catalogue/Series/index.md
 catalogue/Integration
 catalogue/Integration/index.md
 catalogue/Basics
@@ -35,6 +39,8 @@ catalogue/Basics/Algebra/Quadratic Equations/index.md
 catalogue/Basics/Algebra/Inequalities
 catalogue/Basics/Algebra/Inequalities/test.pdf
 catalogue/Basics/Algebra/Inequalities/index.md
+catalogue/Differential Equations
+catalogue/Differential Equations/index.md
 catalogue/Differentiation
 catalogue/Differentiation/Basics
 catalogue/Differentiation/Basics/readme.txt
