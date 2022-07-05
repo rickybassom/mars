@@ -56,5 +56,7 @@ catalogue/Differentiation/Basics/numbas-manifest.json
 catalogue/Differentiation/Basics/downloaded-from.txt
 catalogue/Differentiation/Basics/styles.css
 catalogue/Differentiation/Basics/scripts.js
+catalogue/Functions
+catalogue/Functions/index.md
 catalogue/Continuity
 catalogue/Continuity/index.md
