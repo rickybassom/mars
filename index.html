@@ -47,6 +47,8 @@ layout: main_page
 
 <script>
     async function main() {
+        document.querySelector('iframe').src = "{{ site.baseurl }}" + window.location.hash.substring(1).replace(".md", ".html");
+
         // Load assets/catalogue_index.txt where each line is string in list
         const response = await fetch('{{ site.baseurl }}/assets/catalogue_index.txt');
         const data = await response.text();
@@ -67,6 +69,16 @@ layout: main_page
             return hier;
         }, {});
         console.log(hierarchy); // nested list {dir: {dir: dir, dir2: {...}}}
+
+        // sort each nested list alphabetically in each directory
+        const sortedHierarchy = Object.keys(hierarchy).reduce(function (sorted, dir) {
+            sorted[dir] = Object.keys(hierarchy[dir]).sort().reduce(function (sortedDir, file) {
+                sortedDir[file] = hierarchy[dir][file];
+                return sortedDir;
+            }, {});
+            return sorted;
+        }, {});
+        console.log(sortedHierarchy)
 
         let iframe = document.querySelector('iframe');
         // Recursive function to populate #tree-view using nested <ul>s and <li>s
@@ -105,6 +117,10 @@ layout: main_page
                         a.replaceWith(aNew);
                     }
 
+                    if(Object.keys(hierarchy[key]).length !== 1){
+                        li.classList.add('folder');
+                    }
+
                     let ul2 = document.createElement('ul');
                     li.appendChild(ul2);
                     populateTree(ul2, hierarchy[key]);
@@ -116,7 +132,7 @@ layout: main_page
         let treeView = document.getElementById('tree-view');
         let ul = document.createElement('ul');
         treeView.appendChild(ul);
-        populateTree(ul, hierarchy['catalogue']);
+        populateTree(ul, sortedHierarchy['catalogue']);
     }
 
     main();
