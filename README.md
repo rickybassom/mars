@@ -56,6 +56,11 @@ Start server:
 docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
+For committing locally, run the following command to disable catalogue_index.txt tracking (GH Actions generates this file):
+```sh
+git update-index --assume-unchanged assets/catalogue_index.txt
+```
+
 Useful links:
 - https://jekyllrb.com/
 - https://getbootstrap.com/docs/5.0/getting-started/introduction/
