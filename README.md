@@ -21,7 +21,7 @@ https://rickybassom.github.io/mars/
   * One or more .md Markdown files (will be rendered as HTML to the user)
   * One or more .pdf files
   * One or more video files (.mp4, .ogv, .webm, .wav)
-  * Only unzipped SCORM package files. The index.html file is used to display the quiz. A SCORM directory is identified by the source.exam file. Only unzipped SCORM package files. The index.html file is used to display the quiz on the site. A SCORM directory is identified by the source.exam file. The SCORM directory will appear and act like a file in the site tree view.
+  * Only unzipped SCORM package files. The index.html file is used to display the quiz. A SCORM directory is identified by the source.exam file. Only unzipped SCORM package files. The index.html file is used to display the quiz on the site. A SCORM directory is identified by the numbas-manifest.json file. The SCORM directory will appear and act like a file in the site tree view.
   * One or more child directories
 
 #### Topic Dependency Graph

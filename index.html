@@ -95,17 +95,32 @@ layout: main_page
                 // On click, change iframe preview
                 a.addEventListener('click', function () {
                     iframe.src = "{{ site.baseurl }}/" + hierarchy[key].path.replace(".md", ".html");
+
+                    // hide/show children
+                    if (hierarchy[key] !== undefined && typeof hierarchy[key] === 'object') {
+                        for (let child in hierarchy[key]) {
+                            console.log(child);
+                            if (child === 'path') {
+                                continue;
+                            }
+                            let childLi = document.querySelector('li[data-path="' + hierarchy[key][child].path + '"]');
+                            if (childLi) {
+                                childLi.style.display = 'block';
+                            }
+                        }
+                    }
                 });
 
                 li.appendChild(a);
                 ul.appendChild(li);
                 if (hierarchy[key] !== undefined && typeof hierarchy[key] === 'object') {
-                    // If a child is a numbas-manifest.json ignore all children
+                    // If a child is a numbas-manifest.json ignore all children. The directory is a SCORM directory.
                     if (hierarchy[key]["numbas-manifest.json"] !== undefined) {
+                        a.innerText = key + ".scorm";
                         continue;
                     }
 
-                    // If no index in the directory, don't update the iframe when directory clicked
+                    // If no index file in the directory, show a blank iframe
                     if(Object.keys(hierarchy[key]).length !== 1 && hierarchy[key]["index.html"] === undefined && hierarchy[key]["index.md"] === undefined) {
                         // Remove event listeners from Element and add new click listener
                         console.log(hierarchy[key]);
