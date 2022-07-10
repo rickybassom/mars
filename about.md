@@ -1,6 +1,7 @@
 ---
 layout: main_page
 title: About
+permalink: about
 ---
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/rickybassom/mars?style=social)](https://github.com/rickybassom/mars)

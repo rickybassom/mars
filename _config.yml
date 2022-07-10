@@ -16,7 +16,7 @@
 title: Maths Assessment Recommendation System
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  Description...
+  An online data catalogue for educational Maths material with a built-in Machine Learning topic recommendation system.
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -31,7 +31,7 @@ plugins:
 
 # A list of the pages to display in the navigation bar
 header_pages:
-  - about
+  - about.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +41,5 @@ exclude:
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+  - .idea
+  - .github
