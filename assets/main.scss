@@ -12,6 +12,10 @@
   margin-bottom: 20px;
 }
 
+.border-top {
+  border-top: 1px solid #cfcfcf !important;
+}
+
 .bg-primary {
   background-color: #451804 !important;
 }
@@ -19,6 +23,10 @@
 .navbar-dark .navbar-brand {
   color: #f5f0f0 !important;
   font-weight: bold !important;
+}
+
+iframe {
+  display: block;
 }
 
 /* The list style https://codepen.io/asraven/pen/qbrQMX
