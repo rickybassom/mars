@@ -47,7 +47,10 @@ layout: main_page
 
 <script>
     async function main() {
-        document.querySelector('iframe').src = "{{ site.baseurl }}" + window.location.hash.substring(1).replace(".md", ".html");
+        const topicURLPointer = window.location.hash.substring(1).replace(".md", ".html");
+        if(topicURLPointer !== ''){
+            document.querySelector('iframe').src = "{{ site.baseurl }}" + topicURLPointer;
+        }
 
         // Load assets/catalogue_index.txt where each line is string in list
         const response = await fetch('{{ site.baseurl }}/assets/catalogue_index.txt');
