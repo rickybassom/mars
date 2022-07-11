@@ -6,6 +6,13 @@ layout: main_page
     <div class="row flex-md-row-reverse">
         <div class="col-md-8">
             <div class="card">
+                <div class="card-body">
+                    <span><b>Selected path: </b></span>
+                    <span id="current-topic-path"></span>
+                </div>
+            </div>
+
+            <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">View</h3>
                 </div>
@@ -46,11 +53,24 @@ layout: main_page
 </div>
 
 <script>
-    async function main() {
+    function iframeTopicURLPointerChange(){
         const topicURLPointer = window.location.hash.substring(1).replace(".md", ".html");
         if(topicURLPointer !== ''){
-            document.querySelector('iframe').src = "{{ site.baseurl }}" + topicURLPointer;
+            document.querySelector('iframe').contentWindow.location.replace("{{ site.baseurl }}" + topicURLPointer);
+        } else {
+            document.querySelector('iframe').contentWindow.location.replace("about:blank");
         }
+
+        document.querySelector('#current-topic-path').innerHTML = decodeURI(topicURLPointer).replace("/catalogue/", "");
+    }
+
+    async function main() {
+        iframeTopicURLPointerChange();
+
+        window.addEventListener('hashchange', function () {
+            iframeTopicURLPointerChange();
+            console.log('hashchanged');
+        });
 
         // Load assets/catalogue_index.txt where each line is string in list
         const response = await fetch('{{ site.baseurl }}/assets/catalogue_index.txt');
@@ -95,41 +115,37 @@ layout: main_page
                 a.href = "{{ site.baseurl }}" + '/#/' + hierarchy[key].path;
                 a.innerText = key;
 
-                // On click, change iframe preview
-                a.addEventListener('click', function () {
-                    iframe.src = "{{ site.baseurl }}/" + hierarchy[key].path.replace(".md", ".html");
-
-                    // hide/show children
-                    if (hierarchy[key] !== undefined && typeof hierarchy[key] === 'object') {
-                        for (let child in hierarchy[key]) {
-                            console.log(child);
-                            if (child === 'path') {
-                                continue;
-                            }
-                            let childLi = document.querySelector('li[data-path="' + hierarchy[key][child].path + '"]');
-                            if (childLi) {
-                                childLi.style.display = 'block';
-                            }
-                        }
-                    }
-                });
+                // a.addEventListener('click', function () {
+                //     // hide/show children
+                //     if (hierarchy[key] !== undefined && typeof hierarchy[key] === 'object') {
+                //         for (let child in hierarchy[key]) {
+                //             console.log(child);
+                //             if (child === 'path') {
+                //                 continue;
+                //             }
+                //             let childLi = document.querySelector('li[data-path="' + hierarchy[key][child].path + '"]');
+                //             if (childLi) {
+                //                 childLi.style.display = 'block';
+                //             }
+                //         }
+                //     }
+                // });
 
                 li.appendChild(a);
                 ul.appendChild(li);
                 if (hierarchy[key] !== undefined && typeof hierarchy[key] === 'object') {
                     // If a child is a numbas-manifest.json ignore all children. The directory is a SCORM directory.
                     if (hierarchy[key]["numbas-manifest.json"] !== undefined) {
-                        a.innerText = key + ".scorm";
+                        a.innerText = key + " (scorm)";
                         continue;
                     }
 
                     // If no index file in the directory, show a blank iframe
                     if(Object.keys(hierarchy[key]).length !== 1 && hierarchy[key]["index.html"] === undefined && hierarchy[key]["index.md"] === undefined) {
                         // Remove event listeners from Element and add new click listener
-                        console.log(hierarchy[key]);
                         let aNew = a.cloneNode(true)
                         aNew.addEventListener('click', function () {
-                            iframe.src = "";
+                            iframe.contentWindow.location.replace("");
                         });
 
                         a.replaceWith(aNew);
