@@ -32,6 +32,10 @@ iframe {
 /* The list style https://codepen.io/asraven/pen/qbrQMX
 -------------------------------------------------------------- */
 
+#tree-view {
+  overflow-x: auto;
+}
+
 #tree-view ul:not(:first-child) {
   margin-left: 10px;
   padding-left: 20px;
@@ -48,6 +52,7 @@ iframe {
   font-size: 17px;
   font-style: italic;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 #tree-view a {
@@ -55,6 +60,7 @@ iframe {
   color: #888;
   text-decoration: none;
   transition: all 0.2s ease;
+  margin-right: 10px
 }
 
 #tree-view a:hover {
