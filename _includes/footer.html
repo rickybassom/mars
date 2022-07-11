@@ -2,7 +2,7 @@
 <div class="py-5 border-top">
   <div style="padding: 20px">
 
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
+    <p class="h5 mb-3">{{ site.acronym | escape }} - {{ site.title | escape }}</p>
 
     <div class="row">
 
@@ -10,29 +10,27 @@
         <ul class="list-unstyled">
           <li>
             {%- if site.author -%}
-              {{ site.author | escape }}
+              Author: <a href="mailto:{{ site.author_email | escape }}">{{ site.author | escape }}</a>
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
           </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
+          {%- if site.developer -%}
+          <li>
+            Developer: <a href="mailto:{{ site.developer_email | escape }}">{{ site.developer | escape }}</a>
+          </li>
           {%- endif -%}
         </ul>
       </div>
 
 
       <div class="col-sm text-right">
-        <p>{{- site.description -}}</p>
+        <p>{{- site.description | escape -}}</p>
 
-        <p>Funded by the <a href="https://www.exeter.ac.uk/alumnisupporters/exceptional/impact/annual-fund/">Exeter Annual Alumni Fund</a>.</p>
+        <p>Funded by the <a href="{{ site.annual_alumni_fund_link | escape }}">Exeter Annual Alumni Fund</a>.</p>
 
         <p>
-          <a href="https://www.exeter.ac.uk/alumnisupporters/exceptional/impact/annual-fund/">
+          <a href="{{ site.annual_alumni_fund_link | escape }}">
             <img width="300px" src="assets/images/alumni_annual_fund_logo.png" alt="Alumni Annual Fund Logo">
           </a>
         </p>
