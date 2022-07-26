@@ -1,186 +1,186 @@
-catalogue/Sequences
-catalogue/Sequences/index.md
+catalogue/Functions
+catalogue/Functions/index.md
 catalogue/Vectors
 catalogue/Vectors/index.md
 catalogue/Complex Numbers
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsmanifest.xml
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/index.html
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/numbas-manifest.json
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/scripts.js
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/adlcp_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lom.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/XMLSchema.dtd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lomStrict.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0limit.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0objective.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0control.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0rollup.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0util.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imscp_v1p1.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/readme.txt
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0delivery.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lomCustom.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/xml.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/adlnav_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0auxresource.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lomLoose.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/ims_xml.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/source.exam
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/adlseq_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0random.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0seqrule.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/datatypes.dtd
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/downloaded-from.txt
+catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/styles.css
+catalogue/Complex Numbers/Q: complex number in Cartesian form
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsmanifest.xml
+catalogue/Complex Numbers/Q: complex number in Cartesian form/index.html
+catalogue/Complex Numbers/Q: complex number in Cartesian form/numbas-manifest.json
+catalogue/Complex Numbers/Q: complex number in Cartesian form/scripts.js
+catalogue/Complex Numbers/Q: complex number in Cartesian form/adlcp_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lom.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/XMLSchema.dtd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lomStrict.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0limit.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0objective.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0control.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0rollup.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0util.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imscp_v1p1.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/readme.txt
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0delivery.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lomCustom.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/xml.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/adlnav_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0auxresource.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/lomLoose.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/ims_xml.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/source.exam
+catalogue/Complex Numbers/Q: complex number in Cartesian form/adlseq_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0random.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0seqrule.xsd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/datatypes.dtd
+catalogue/Complex Numbers/Q: complex number in Cartesian form/downloaded-from.txt
+catalogue/Complex Numbers/Q: complex number in Cartesian form/styles.css
 catalogue/Complex Numbers/index.md
 catalogue/Complex Numbers/Q: complex number in polar form
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0objective.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/readme.txt
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0random.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/lom.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/index.html
-catalogue/Complex Numbers/Q: complex number in polar form/adlseq_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/adlcp_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/adlnav_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0util.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/XMLSchema.dtd
-catalogue/Complex Numbers/Q: complex number in polar form/imscp_v1p1.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/source.exam
-catalogue/Complex Numbers/Q: complex number in polar form/numbas-manifest.json
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0auxresource.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/lomCustom.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/ims_xml.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/downloaded-from.txt
-catalogue/Complex Numbers/Q: complex number in polar form/datatypes.dtd
-catalogue/Complex Numbers/Q: complex number in polar form/xml.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0limit.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/styles.css
-catalogue/Complex Numbers/Q: complex number in polar form/lomLoose.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/scripts.js
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0control.xsd
 catalogue/Complex Numbers/Q: complex number in polar form/imsmanifest.xml
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0rollup.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0seqrule.xsd
-catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0delivery.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/index.html
+catalogue/Complex Numbers/Q: complex number in polar form/numbas-manifest.json
+catalogue/Complex Numbers/Q: complex number in polar form/scripts.js
+catalogue/Complex Numbers/Q: complex number in polar form/adlcp_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/lom.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/XMLSchema.dtd
 catalogue/Complex Numbers/Q: complex number in polar form/lomStrict.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0objective.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/readme.txt
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0random.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lom.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/index.html
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/adlseq_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/adlcp_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/adlnav_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0util.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/XMLSchema.dtd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imscp_v1p1.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/source.exam
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/numbas-manifest.json
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0auxresource.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lomCustom.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/ims_xml.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/downloaded-from.txt
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/datatypes.dtd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/xml.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0limit.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/styles.css
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lomLoose.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/scripts.js
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0control.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsmanifest.xml
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0rollup.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0seqrule.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/imsss_v1p0delivery.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form (2)/lomStrict.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0objective.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/readme.txt
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0random.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/lom.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/index.html
-catalogue/Complex Numbers/Q: complex number in Cartesian form/adlseq_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/adlcp_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/adlnav_v1p3.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0util.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/XMLSchema.dtd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imscp_v1p1.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/source.exam
-catalogue/Complex Numbers/Q: complex number in Cartesian form/numbas-manifest.json
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0auxresource.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/lomCustom.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/ims_xml.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/downloaded-from.txt
-catalogue/Complex Numbers/Q: complex number in Cartesian form/datatypes.dtd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/xml.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0limit.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/styles.css
-catalogue/Complex Numbers/Q: complex number in Cartesian form/lomLoose.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/scripts.js
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0control.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsmanifest.xml
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0rollup.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0seqrule.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/imsss_v1p0delivery.xsd
-catalogue/Complex Numbers/Q: complex number in Cartesian form/lomStrict.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0limit.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0objective.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0control.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0rollup.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0util.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imscp_v1p1.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/readme.txt
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0delivery.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/lomCustom.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/xml.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/adlnav_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0auxresource.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/lomLoose.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/ims_xml.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/source.exam
+catalogue/Complex Numbers/Q: complex number in polar form/adlseq_v1p3.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0random.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/imsss_v1p0seqrule.xsd
+catalogue/Complex Numbers/Q: complex number in polar form/datatypes.dtd
+catalogue/Complex Numbers/Q: complex number in polar form/downloaded-from.txt
+catalogue/Complex Numbers/Q: complex number in polar form/styles.css
 catalogue/Complex Numbers/Q: complex roots
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0objective.xsd
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0.xsd
-catalogue/Complex Numbers/Q: complex roots/readme.txt
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0random.xsd
-catalogue/Complex Numbers/Q: complex roots/lom.xsd
-catalogue/Complex Numbers/Q: complex roots/index.html
-catalogue/Complex Numbers/Q: complex roots/adlseq_v1p3.xsd
-catalogue/Complex Numbers/Q: complex roots/adlcp_v1p3.xsd
-catalogue/Complex Numbers/Q: complex roots/adlnav_v1p3.xsd
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0util.xsd
-catalogue/Complex Numbers/Q: complex roots/XMLSchema.dtd
-catalogue/Complex Numbers/Q: complex roots/imscp_v1p1.xsd
-catalogue/Complex Numbers/Q: complex roots/source.exam
-catalogue/Complex Numbers/Q: complex roots/numbas-manifest.json
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0auxresource.xsd
-catalogue/Complex Numbers/Q: complex roots/lomCustom.xsd
-catalogue/Complex Numbers/Q: complex roots/ims_xml.xsd
-catalogue/Complex Numbers/Q: complex roots/downloaded-from.txt
-catalogue/Complex Numbers/Q: complex roots/datatypes.dtd
-catalogue/Complex Numbers/Q: complex roots/xml.xsd
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0limit.xsd
-catalogue/Complex Numbers/Q: complex roots/styles.css
-catalogue/Complex Numbers/Q: complex roots/lomLoose.xsd
-catalogue/Complex Numbers/Q: complex roots/scripts.js
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0control.xsd
 catalogue/Complex Numbers/Q: complex roots/imsmanifest.xml
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0rollup.xsd
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0seqrule.xsd
-catalogue/Complex Numbers/Q: complex roots/imsss_v1p0delivery.xsd
+catalogue/Complex Numbers/Q: complex roots/index.html
+catalogue/Complex Numbers/Q: complex roots/numbas-manifest.json
+catalogue/Complex Numbers/Q: complex roots/scripts.js
+catalogue/Complex Numbers/Q: complex roots/adlcp_v1p3.xsd
+catalogue/Complex Numbers/Q: complex roots/lom.xsd
+catalogue/Complex Numbers/Q: complex roots/XMLSchema.dtd
 catalogue/Complex Numbers/Q: complex roots/lomStrict.xsd
-catalogue/Linear Algebra
-catalogue/Linear Algebra/index.md
-catalogue/Polar Coordinates
-catalogue/Polar Coordinates/index.md
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0limit.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0objective.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0control.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0rollup.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0util.xsd
+catalogue/Complex Numbers/Q: complex roots/imscp_v1p1.xsd
+catalogue/Complex Numbers/Q: complex roots/readme.txt
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0delivery.xsd
+catalogue/Complex Numbers/Q: complex roots/lomCustom.xsd
+catalogue/Complex Numbers/Q: complex roots/xml.xsd
+catalogue/Complex Numbers/Q: complex roots/adlnav_v1p3.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0auxresource.xsd
+catalogue/Complex Numbers/Q: complex roots/lomLoose.xsd
+catalogue/Complex Numbers/Q: complex roots/ims_xml.xsd
+catalogue/Complex Numbers/Q: complex roots/source.exam
+catalogue/Complex Numbers/Q: complex roots/adlseq_v1p3.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0random.xsd
+catalogue/Complex Numbers/Q: complex roots/imsss_v1p0seqrule.xsd
+catalogue/Complex Numbers/Q: complex roots/datatypes.dtd
+catalogue/Complex Numbers/Q: complex roots/downloaded-from.txt
+catalogue/Complex Numbers/Q: complex roots/styles.css
+catalogue/Sequences
+catalogue/Sequences/index.md
 catalogue/Series
 catalogue/Series/index.md
+catalogue/Linear Algebra
+catalogue/Linear Algebra/index.md
 catalogue/Integration
 catalogue/Integration/index.md
+catalogue/Differential Equations
+catalogue/Differential Equations/index.md
+catalogue/Polar Coordinates
+catalogue/Polar Coordinates/index.md
+catalogue/Continuity
+catalogue/Continuity/index.md
 catalogue/Basics
 catalogue/Basics/index.md
 catalogue/Basics/Algebra
-catalogue/Basics/Algebra/test.pdf
-catalogue/Basics/Algebra/index.md
-catalogue/Basics/Algebra/Basic Operations
-catalogue/Basics/Algebra/Basic Operations/test.pdf
-catalogue/Basics/Algebra/Basic Operations/index.md
-catalogue/Basics/Algebra/Basic Operations/Test.md
+catalogue/Basics/Algebra/Polynomials
+catalogue/Basics/Algebra/Polynomials/index.md
+catalogue/Basics/Algebra/Polynomials/test.pdf
+catalogue/Basics/Algebra/Linear Equations
+catalogue/Basics/Algebra/Linear Equations/index.md
+catalogue/Basics/Algebra/Linear Equations/test.pdf
 catalogue/Basics/Algebra/Factoring
-catalogue/Basics/Algebra/Factoring/test.pdf
-catalogue/Basics/Algebra/Factoring/index.md
 catalogue/Basics/Algebra/Factoring/Quiz
-catalogue/Basics/Algebra/Factoring/Quiz/readme.txt
 catalogue/Basics/Algebra/Factoring/Quiz/index.html
-catalogue/Basics/Algebra/Factoring/Quiz/source.exam
 catalogue/Basics/Algebra/Factoring/Quiz/numbas-manifest.json
+catalogue/Basics/Algebra/Factoring/Quiz/scripts.js
+catalogue/Basics/Algebra/Factoring/Quiz/readme.txt
+catalogue/Basics/Algebra/Factoring/Quiz/source.exam
 catalogue/Basics/Algebra/Factoring/Quiz/downloaded-from.txt
 catalogue/Basics/Algebra/Factoring/Quiz/styles.css
-catalogue/Basics/Algebra/Factoring/Quiz/scripts.js
+catalogue/Basics/Algebra/Factoring/index.md
+catalogue/Basics/Algebra/Factoring/test.pdf
 catalogue/Basics/Algebra/Factoring/Test Video.mp4
-catalogue/Basics/Algebra/Linear Equations
-catalogue/Basics/Algebra/Linear Equations/test.pdf
-catalogue/Basics/Algebra/Linear Equations/index.md
-catalogue/Basics/Algebra/Polynomials
-catalogue/Basics/Algebra/Polynomials/test.pdf
-catalogue/Basics/Algebra/Polynomials/index.md
-catalogue/Basics/Algebra/Quadratic Equations
-catalogue/Basics/Algebra/Quadratic Equations/test.pdf
-catalogue/Basics/Algebra/Quadratic Equations/index.md
+catalogue/Basics/Algebra/Basic Operations
+catalogue/Basics/Algebra/Basic Operations/index.md
+catalogue/Basics/Algebra/Basic Operations/Test.md
+catalogue/Basics/Algebra/Basic Operations/test.pdf
+catalogue/Basics/Algebra/index.md
 catalogue/Basics/Algebra/Inequalities
-catalogue/Basics/Algebra/Inequalities/test.pdf
 catalogue/Basics/Algebra/Inequalities/index.md
-catalogue/Differential Equations
-catalogue/Differential Equations/index.md
+catalogue/Basics/Algebra/Inequalities/test.pdf
+catalogue/Basics/Algebra/Quadratic Equations
+catalogue/Basics/Algebra/Quadratic Equations/index.md
+catalogue/Basics/Algebra/Quadratic Equations/test.pdf
+catalogue/Basics/Algebra/test.pdf
 catalogue/Differentiation
 catalogue/Differentiation/Basics
-catalogue/Differentiation/Basics/readme.txt
 catalogue/Differentiation/Basics/index.html
-catalogue/Differentiation/Basics/source.exam
 catalogue/Differentiation/Basics/numbas-manifest.json
+catalogue/Differentiation/Basics/scripts.js
+catalogue/Differentiation/Basics/readme.txt
+catalogue/Differentiation/Basics/source.exam
 catalogue/Differentiation/Basics/downloaded-from.txt
 catalogue/Differentiation/Basics/styles.css
-catalogue/Differentiation/Basics/scripts.js
-catalogue/Functions
-catalogue/Functions/index.md
-catalogue/Continuity
-catalogue/Continuity/index.md
