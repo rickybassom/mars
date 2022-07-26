@@ -88,7 +88,7 @@ layout: main_page
             suggestedPrerequisites.innerHTML = '';
             dependencies.forEach(function(dependency){
                 const li = document.createElement('li');
-                li.innerHTML = `<a href="/#/catalogue/${dependency.path}">${dependency.path}</a>`;
+                li.innerHTML = `<a href="{{ site.baseurl }}/#/catalogue/${dependency.path}">${dependency.path}</a>`;
                 suggestedPrerequisites.appendChild(li);
             });
         });
