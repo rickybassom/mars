@@ -7,7 +7,7 @@ layout: main_page
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <span><b>Selected path: </b></span>
+                    <span><b>Selected catalogue path: </b></span>
                     <span id="current-topic-path"></span>
                 </div>
             </div>
@@ -17,7 +17,7 @@ layout: main_page
                     <h3 class="card-title">View</h3>
                 </div>
                 <div class="card-body" style="padding: 0">
-                    <iframe src="" title="" style="width: 100%; height: 500px; border: none"></iframe>
+                    <iframe id="content-iframe" src="" title="" style="width: 100%; height: 500px; border: none"></iframe>
                 </div>
             </div>
 
@@ -34,8 +34,8 @@ layout: main_page
                 <div class="card-header">
                     <h3 class="card-title">Suggested Prerequisites</h3>
                 </div>
-                <div class="card-body" style="padding: 0">
-
+                <div class="card-body" style="padding: 10px 0 0;">
+                    <ol id="suggested-prerequisites"></ol>
                 </div>
             </div>
         </div>
@@ -56,12 +56,56 @@ layout: main_page
     function iframeTopicURLPointerChange(){
         const topicURLPointer = window.location.hash.substring(1).replace(".md", ".html");
         if(topicURLPointer !== ''){
-            document.querySelector('iframe').contentWindow.location.replace("{{ site.baseurl }}" + topicURLPointer);
+            document.getElementById("content-iframe").contentWindow.location.replace("{{ site.baseurl }}" + topicURLPointer);
         } else {
-            document.querySelector('iframe').contentWindow.location.replace("about:blank");
+            document.getElementById("content-iframe").contentWindow.location.replace("about:blank");
         }
 
-        document.querySelector('#current-topic-path').innerHTML = decodeURI(topicURLPointer).replace("/catalogue/", "");
+        const topicPath = decodeURI(topicURLPointer.replace(/\/$/, ""));
+        document.querySelector('#current-topic-path').innerHTML = "/" + topicPath.replace("/catalogue/", "");
+
+        const topicPathDecodedSplit = topicPath.split("/");
+        let deepestDirectoryPath;
+        if(topicPathDecodedSplit[topicPathDecodedSplit.length - 1].includes(".")){
+            deepestDirectoryPath = topicPathDecodedSplit.slice(0, topicPathDecodedSplit.length - 1).join("/") + "/";
+        } else {
+            deepestDirectoryPath = topicPath + "/";
+        }
+
+        getDependencies(deepestDirectoryPath).then(function(dependencies){
+            console.log(dependencies);
+            const suggestedPrerequisites = document.querySelector('#suggested-prerequisites');
+
+            if(dependencies === null){
+                suggestedPrerequisites.innerHTML = 'No suggestions available';
+                return;
+            }
+
+            dependencies.sort(function(a, b){
+                return b.weight- a.weight;
+            });
+
+            suggestedPrerequisites.innerHTML = '';
+            dependencies.forEach(function(dependency){
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="/#/catalogue/${dependency.path}">${dependency.path}</a>`;
+                suggestedPrerequisites.appendChild(li);
+            });
+        });
+    }
+
+    async function getDependencies(page) {
+        const apiURL = "{{ site.baseurl }}/api.json";
+        return await fetch(apiURL)
+            .then(response => response.json())
+            .then(data => {
+                console.log(page);
+                const catalogueDirectoryData = data.catalogueDirectoryData;
+                if (!catalogueDirectoryData.hasOwnProperty(page)) {
+                    return null;
+                }
+                return catalogueDirectoryData[page].depends_on;
+            });
     }
 
     async function main() {
@@ -103,7 +147,7 @@ layout: main_page
         }, {});
         console.log(sortedHierarchy)
 
-        let iframe = document.querySelector('iframe');
+        let iframe = document.getElementById("content-iframe");
         // Recursive function to populate #tree-view using nested <ul>s and <li>s
         function populateTree(ul, hierarchy) {
             for (let key in hierarchy) {

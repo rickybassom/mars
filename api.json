@@ -1,0 +1,15 @@
+---
+---
+{
+  "catalogueDirectoryData": {
+{% assign sortedpages = site.pages | sort: 'url' %}
+{% assign sortedpagesfiltered = sortedpages | where_exp: 'page', 'page.url contains "/catalogue/"' %}
+{% for page in sortedpagesfiltered %}
+  "{{ page.url | url_decode }}":
+    {
+      "depends_on": {{ page.depends_on | jsonify }},
+      "url": "{{ page.url | prepend: site.url }}"
+    }{% if forloop.last == false %},{% endif %}
+{% endfor %}
+  }
+}

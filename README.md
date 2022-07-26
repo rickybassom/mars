@@ -21,7 +21,7 @@ https://rickybassom.github.io/mars/
   * One or more .md Markdown or .html files. An optional index.md or index.html file in a directory will appear when the directory is clicked on the Catalogue Directory Tree.
   * One or more .pdf files.
   * One or more video files (.mp4, .ogv, .webm, .wav).
-  * Only unzipped SCORM package files. The `index.html` file is used to display the quiz on the site. A SCORM directory is identified by the `numbas-manifest.json` file. The SCORM directory will appear and act like a file in the Catalogue Directory Tree.
+  * Only unzipped SCORM package files. The `index.html` file is used to display the quiz on the site. A SCORM directory is identified by the `numbas-manifest.json` file. The SCORM directory will appear and act like a file in the Catalogue Directory Tree. The web interface essentially treats this directory as a viewable file in the catalogue.
   * One or more child directories.
 
 #### Topic Dependency Graph

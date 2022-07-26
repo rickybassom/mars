@@ -2,6 +2,10 @@
 layout: base
 ---
 
+<script>
+    const pageData = {{ page.depends_on | jsonify }};
+</script>
+
 <div style="margin: 10px;">
     {{ content }}
 </div>
