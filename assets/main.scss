@@ -8,6 +8,19 @@
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
 
+a {
+  color: #c1440e !important;
+}
+
+#tree-view a,  {
+  color: unset !important;
+}
+
+.navbar-nav a {
+  color: white !important;
+}
+
+
 .card {
   margin-bottom: 20px;
 }

@@ -3,20 +3,25 @@ layout: base
 ---
 
 <header>
-  {%- include header.html -%}
-  <style>
-    body {
-      background-color: #f5f0f0;
-    }
-  </style>
+    {%- include header.html -%}
+    <style>
+        body {
+            background-color: #f5f0f0;
+            background-image: linear-gradient(rgba(249, 246, 246, 0.7), rgba(255, 255, 255, 0.7)), url('assets/images/mars.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
 </header>
 
 <section>
-  <div class="py-5">
-    <div class="container page-content" style="max-width: 100%;">
-      {{ content }}
+    <div class="py-5">
+        <div class="container page-content" style="max-width: 100%;">
+            {{ content }}
+        </div>
     </div>
-  </div>
 </section>
 
 {%- include footer.html -%}
