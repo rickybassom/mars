@@ -62,7 +62,7 @@ layout: main_page
         }
 
         const topicPath = decodeURI(topicURLPointer.replace(/\/$/, ""));
-        document.querySelector('#current-topic-path').innerHTML = "/" + topicPath.replace("/catalogue/", "");
+        document.querySelector('#current-topic-path').innerHTML = topicPath.replace("/catalogue/", "");
 
         const topicPathDecodedSplit = topicPath.split("/");
         let deepestDirectoryPath;
